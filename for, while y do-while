@@ -1,0 +1,49 @@
+#include<stdio.h>
+
+int main()
+{
+    int letreros = 0, num = 0;
+    int opcion;
+    
+    printf("Desea correr el programa con:\n");
+    printf("1. while\n");
+    printf("2. do-while\n");
+    printf("3. for\n");
+    scanf("%d", &opcion);
+
+    if (opcion == 1)
+    {
+        printf("Numero de letreros: ");
+        scanf("%d", &letreros);
+        while (num < letreros)
+        {
+            printf("hola mundo\n");
+            num++;
+        }
+    }
+    else if (opcion == 2)
+    {
+        printf("Numero de letreros: ");
+        scanf("%d", &letreros);
+        num = 0;
+        do {
+            printf("hola mundo\n");
+            num++;
+        } while (num < letreros);
+    }
+    else if (opcion == 3)
+    {
+        printf("Numero de letreros: ");
+        scanf("%d", &letreros);
+        for (num = 0; num < letreros; num++)
+        {
+            printf("hola mundo\n");
+        }
+    }
+    else
+    {
+        printf("Opción no válida\n");
+    }
+
+    return 0;
+}
